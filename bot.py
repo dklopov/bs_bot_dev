@@ -9,6 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
+
 def get_email_list_parsing(accounts_for_parsing_raw):
     email_list = []
     email_list_for_send_email = []
