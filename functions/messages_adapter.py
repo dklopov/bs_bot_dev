@@ -1,0 +1,7 @@
+def messages_adapter(raw_users_list: list, raw_emails_list: list) -> str:
+    lists = []
+    lists.append(raw_users_list)
+    lists.append(raw_emails_list)
+    lists_raw = list(map("::".join, zip(*lists)))
+    message_to_send = str(lists_raw).replace("::", "</td>\n<td style=\"width: 50%;\">").replace("', '", "</td>\n</tr>\n<tr>\n<td style=\"width: 50%;\">").replace("['", "<tr>\n<td style=\"width: 50%;\">").replace("']", "</td>\n</tr>")
+    return message_to_send
