@@ -1,4 +1,4 @@
-def messages_adapter(raw_users_list: list, raw_emails_list: list) -> str:
+def messages_adapter(raw_users_list: list, raw_emails_list: list, command: str) -> str:
     lists = []
     lists.append(raw_users_list)
     lists.append(raw_emails_list)
