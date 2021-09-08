@@ -3,6 +3,10 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+import telebot
+from classes.classes import Bot
+bot = telebot.TeleBot(Bot().get_token())
+
 
 def send_result_on_gmail(message: str, receiver_email: str) -> None:
     """ Функция отправляет письмо на переданный в нее gmail"""
@@ -32,7 +36,7 @@ def send_result_on_gmail(message: str, receiver_email: str) -> None:
     mail.quit()
 
 
-def send_result_on_telegram(user_id, text):
-    text_for_message = text.replace("[", "").replace("]", "").replace("',", "\n").replace(" '", "").replace("'", "")
-    bot.send_message(user_id, text_for_message)
+def send_result_on_telegram(message, receiver_id):
+    text_for_message = message.replace("[", "").replace("]", "").replace("',", "\n").replace(" '", "").replace("'", "")
+    bot.send_message(receiver_id, text_for_message)
     return text_for_message

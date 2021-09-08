@@ -1,5 +1,5 @@
 class Bot:
-    __bot_token = "1519614513:AAEjlL3GSEPtZG2Uln8luL0OCs7VaQ0H57I"
+    __bot_token = "1431872409:AAGYWjNLZUj2NbFJ0Z23DnUAz9ifqOA1CEQ"
 
     def __str__(self):
         return "Класс содержит токен для подключения к боту, который я не покажу"
