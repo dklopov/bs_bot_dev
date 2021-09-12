@@ -12,7 +12,7 @@ def send_result_on_gmail(message: str, receiver_email: str) -> None:
     """ Функция отправляет письмо на переданный в нее gmail"""
     server = 'smtp.gmail.com'
     user = 'beatstars.helper.bot@gmail.com'
-    password = 'Jkbvgbflf2014'
+    password = 'uvrlgsmxprnhodty'
     recipients = [receiver_email]
     sender = 'beatstars.helper.bot@gmail.com'
     subject = 'Результаты парсинга ' + str(datetime.date.today())
