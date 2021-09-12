@@ -1,7 +1,7 @@
 pro_users_name = [
-    'dimabeatmaker'
+    'dimabeatmaker1'
 ]
 
 pro_users_email = {
-    'dimabeatmaker': 'strvngebeats@gmail.com'
+    'dimabeatmaker1': 'strvngebeats@gmail.com'
 }
