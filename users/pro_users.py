@@ -1,4 +1,7 @@
-from classes.classes import User
+pro_users_name = [
+    'dimabeatmaker'
+]
 
-dimabeatmaker = User(user_name="@dimabeatmaker", user_id=380895469, user_subscription_type="pro")
-print(dimabeatmaker)
+pro_users_email = {
+    'dimabeatmaker': 'strvngebeats@gmail.com'
+}
