@@ -1,1 +1,1 @@
-worker: python beatstars_helper_bot.py
+worker: python main.py
