@@ -24,6 +24,7 @@ if __name__ == "__main__":
         receiver_name = users.from_user.username
 
         if receiver_name in pro_users_name:
+            bot.send_message(receiver_id, 'Собираю данные, результаты будут отправлены на почту указанную при оплате')
             get_email_list_parsing(users=users.text)
             message_to_send = messages_adapter(raw_users_list=raw_users_list, raw_emails_list=raw_emails_list, command="email", subscription_type='pro')
             send_result_on_gmail(message=message_to_send, receiver_email=pro_users_email[receiver_name])
