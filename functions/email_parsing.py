@@ -12,7 +12,7 @@ def get_email_list_parsing(users):
             raw_users_list.append(accounts_for_parsing[n])
             raw_emails_list.append(user_email)
             n += 1
-        except KeyError:
+        except:
             n += 1
     return raw_users_list, raw_emails_list
 
