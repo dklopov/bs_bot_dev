@@ -7,13 +7,13 @@ def messages_adapter(raw_users_list: list, raw_emails_list: list, command: str, 
         if subscription_type == 'free':
             try:
                 message_to_send = raw_emails_list[0]
-            except KeyError:
+            except:
                 print("messages_adapter: что-то пошло не так")
                 message_to_send = "messages_adapter: что-то пошло не так"
         else:
             try:
                 message_to_send = str(lists_raw).replace("::", "</td>\n<td style=\"width: 50%;\">").replace("', '", "</td>\n</tr>\n<tr>\n<td style=\"width: 50%;\">").replace("['", "<tr>\n<td style=\"width: 50%;\">").replace("']", "</td>\n</tr>")
-            except KeyError:
+            except:
                 print("messages_adapter: что-то пошло не так")
                 message_to_send = "messages_adapter: что-то пошло не так"
     return message_to_send
