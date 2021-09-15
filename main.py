@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     @bot.message_handler(commands=["get_fans_email"])
     def email(message):
-        bot.send_message(message.from_user.id, 'Укажи ссылку на бит')
+        bot.send_message(message.from_user.id, 'Укажи ссылку на бит вида "https://www.beatstars.com/beat/pressure-8395689"')
         url = message
         bot.register_next_step_handler(url, fans_email)
 
