@@ -2,7 +2,7 @@ from functions.connect_beatstars_com import connect_beatstars_com
 
 
 def get_fans_list_for_parsing(track_url: str):
-    track_id = track_url.split("-")[1]
+    track_id = track_url.split("-")[-1].replace('/fans', '').replace('/related-tracks', '').replace('/comments', '').replace('/fans', '')
     url_from_request = ('https://main.v2.beatstars.com/fans/track/?id=' + str(track_id) + '&list_limit=1000')
     print(url_from_request)
     data_json = connect_beatstars_com(url_from_request=url_from_request)
