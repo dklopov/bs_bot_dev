@@ -6,7 +6,7 @@ pro_users_name = [
 
 pro_users_email = {
     'dimabeatmaker': 'strvngebeats@gmail.com',
-    'thgehji': 'Arcondatrack@gmail.com',
-    'kkkkkkkkkk_kkkk': 'katanobeat.booking@gmail.com',
+    # 'thgehji': 'Arcondatrack@gmail.com',
+    # 'kkkkkkkkkk_kkkk': 'katanobeat.booking@gmail.com',
     'boyblems': '1boyblems@gmail.com'
 }
